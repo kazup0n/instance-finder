@@ -1,5 +1,28 @@
 # instance-finder
 
+just print ec2 instances
+
+## example
+
+```
+ $ AWS_REGION=us-west-1 findinstance
+# of instances: 5
+  +-------------+-----------------+---------------------------------------------------+---------+
+  | instance_id | name            | start                                             | status  |
+  +-------------+-----------------+---------------------------------------------------+---------+
+  | i-XXXXXXXXX | XXXXXXXXX       | aws ec2 start-instances --instance-ids=i-XXXXXXXXX | stopped |
+  +-------------+-----------------+---------------------------------------------------+---------+
+  | i-XXXXXXXXX  | XXXXXXXXX      | aws ec2 start-instances --instance-ids=i-XXXXXXXXX | stopped |
+  +-------------+-----------------+---------------------------------------------------+---------+
+  | i-XXXXXXXXX  | XXXXXXXXX      | aws ec2 start-instances --instance-ids=i-XXXXXXXXX | running |
+  +-------------+-----------------+---------------------------------------------------+---------+
+  | i-XXXXXXXXX  | XXXXXXXXX      | aws ec2 start-instances --instance-ids=i-XXXXXXXXX | stopped |
+  +-------------+-----------------+---------------------------------------------------+---------+
+  | i-XXXXXXXXX  | XXXXXXXXX       | aws ec2 start-instances --instance-ids=i-XXXXXXXXX | stopped |
+  +-------------+-----------------+---------------------------------------------------+---------+
+
+```
+
 ## usage
 
 1. clone this repository.
